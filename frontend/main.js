@@ -1,19 +1,12 @@
-window.addEventListener('DOMContentLoaded', (event) =>{
-    getVisitCount();
-})
+ const increaseCounter = () => {
+    let currentCount = parseInt(document.getElementById("counter").innerText);
+    
+    let count = 30
+    
+    count++
 
-const functionApi = '';
-
-const getVisitCount = () => {
-    let count = 30;
-    fetch(functionApi).then(response => {
-        return response.json()
-    }).then(response =>{
-        console.log("Website called function API.");
-        count =  response.count;
-        document.getElementById("counter").innerText = count;
-    }).catch(function(error){
-        console.log(error);
-    });
-    return count;
+    document.getElementById("counter").innerText = count;
 }
+window.addEventListener('DOMContentLoaded', (event) => {
+    increaseCounter();
+});
