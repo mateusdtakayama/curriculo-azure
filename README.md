@@ -27,8 +27,8 @@ O Back-end é uma [HTTP triggered Azure Functions](https://docs.microsoft.com/en
 - [Criar uma Cosmos DB account](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal)
 - [Criar uma HTTP triggered Azure Function no VsCode.](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs-code?tabs=csharp)
 - [Azure Functions Cosmos DB bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb-v2)
-- [Retrieve a Cosmos DB item with Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-input?tabs=csharp)
-- [Write to a Cosmos DB item with Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-output?tabs=csharp)
+- [Recuperar um item do Cosmos DB com Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-input?tabs=csharp)
+- [Escrever um item do Cosmos DB com Functions binding.](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-output?tabs=csharp)
 - [Habilitar CORS para o Azure Functions local](https://learn.microsoft.com/azure/azure-functions/functions-develop-local#local-settings-file) 
 - [Habilitar CORS para o Azure Functions depois do Deploy](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings?tabs=portal#cors)
 
