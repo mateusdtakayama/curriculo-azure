@@ -2,6 +2,8 @@
 
 Este é meu Cloud Resume Challenge feito no Azure. Um website estático hospedado no Azure Storage, com um contador feito no Azure Functions. O website foi feito utilizando HTML5, CSS3 e Javascript. O contador de visitas foi feito utilizando .NET e Azure Functions. O valor do contador é salvo no Azure Cosmos DB NoSQL.
 
+Link para acessar: https://mateusdtakayama.azureedge.net/
+
 
 ![architecture](architecture.png)
 
@@ -42,3 +44,4 @@ O Back-end é uma [HTTP triggered Azure Functions](https://docs.microsoft.com/en
 
 - Implementar testes no backend e na esteira de CI/CD.
 - Criar arquivos de IaC (Terraform & Ansible).
+- Implementar Docker.
