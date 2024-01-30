@@ -2,7 +2,6 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     const spinner = document.getElementById("spinner");
     const overlay = document.getElementById("overlay");
     const welcome = document.getElementById("welcome");
-    welcome.style.display = "none";
     spinner.style.display = "inline-block";
     overlay.style.display = "block";
     getVisitCount();
