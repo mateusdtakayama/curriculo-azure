@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     const overlay = document.getElementById("overlay");
     const welcomeFirst = document.getElementById("welcome");
     const welcomeSecond = document.getElementById("welcometwo");
+    welcomeSecond.style.display = "inline-block";
     welcomeFirst.style.display = "none";
     spinner.style.display = "inline-block";
     overlay.style.display = "block";
