@@ -56,7 +56,8 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Oi, sou o Mateus</h1>
-
+            <div id="overlay" class="overlay"></div>
+            <span id="spinner" class="loader" style="display: none;"></span>
             <p>e você é o (a) visitante número <a id="counter"></a> :) </p>
             <ul class="social">
                <li><a href="https://linkedin.com/in/mateusdtakayama" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -308,3 +309,40 @@
 </body>
 
 </html>
+
+<style>
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+    z-index: 9999; /* Garante que o overlay fique em cima de todos os outros elementos */
+    display: none; /* Inicialmente oculto */
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Estilos do spinner */
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+   0% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(360deg);
+   }
+}
+</style>

@@ -1,4 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) =>{
+    const spinner = document.getElementById("spinner");
+    const overlay = document.getElementById("overlay");
+    spinner.style.display = "inline-block";
+    overlay.style.display = "block";
     getVisitCount();
 })
 
@@ -15,6 +19,9 @@ const getVisitCount = () => {
         document.getElementById("counter").innerText = count;
     }).catch(function(error){
         console.log(error);
+    }).finally(() => {
+        spinner.style.display = "none";
+        overlay.style.display = "none";
     });
     return count;
 }
