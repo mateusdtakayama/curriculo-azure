@@ -1,10 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) =>{
     const spinner = document.getElementById("spinner");
     const overlay = document.getElementById("overlay");
-    const welcomeFirst = document.getElementById("welcome");
-    const welcomeSecond = document.getElementById("welcometwo");
-    welcomeSecond.style.display = "inline-block";
-    welcomeFirst.style.display = "none";
+    const welcome = document.getElementById("welcome");
+    welcome.style.display = "none";
     spinner.style.display = "inline-block";
     overlay.style.display = "block";
     getVisitCount();
@@ -26,10 +24,11 @@ const getVisitCount = () => {
         overlay.style.display = "none";
         console.log(error);
     }).finally(() => {
+        const welcomeSecond = document.getElementById("welcometwo");
         welcomeSecond.style.display = "none";
         spinner.style.display = "none";
         overlay.style.display = "none";
-        welcomeFirst.style.display = "inline-block";
+        welcome.style.display = "block";
     });
     return count;
 }
