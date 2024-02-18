@@ -1,4 +1,4 @@
-# Meu currículo na Azure
+# Meu currículo no Azure
 
 Este é meu Cloud Resume Challenge feito no Azure. Um website estático hospedado no Azure Storage, com um contador feito no Azure Functions. O website foi feito utilizando HTML5, CSS3 e Javascript. O contador de visitas foi feito utilizando .NET e Azure Functions. O valor do contador é salvo no Azure Cosmos DB NoSQL.
 
